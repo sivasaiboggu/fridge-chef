@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fridge Chef — What&rsquo;s in the fridge?</title>
+<meta name="description" content="Photograph your fridge, get recipes you can actually cook from what's inside it, and one shopping list for what's missing.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site">
+  <div class="wrap header-in">
+    <a class="brand" href="#/home"><span class="mark">F</span><b>Fridge Chef</b><span>cook from what&rsquo;s there</span></a>
+    <nav class="main" aria-label="Main">
+      <button data-view="home" onclick="location.hash='#/home'">Cook</button>
+      <button data-view="shopping" id="nav-shopping">Shopping list<span class="n" id="nav-shop-count"></span></button>
+      <button data-view="settings" onclick="location.hash='#/settings'">Settings</button>
+    </nav>
+  </div>
+</header>
+<main class="wrap" id="view"></main>
+<footer class="site">
+  <div class="wrap">
+    <p>Fridge Chef — a hackathon build. Photos: public-domain USDA photos via Wikimedia Commons, credited on each fridge. Recipes are hand-written or generated, not kitchen-tested; nutrition figures are estimates. Your Gemini key, if you add one, stays in this browser.</p>
+  </div>
+</footer>
+<script src="logic.js"></script>
+<script src="data.js"></script>
+<script src="gemini.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
